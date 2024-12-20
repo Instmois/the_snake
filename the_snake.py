@@ -92,7 +92,6 @@ class Snake(GameObject):
         head = tuple(head)
         self.positions.insert(0, head)
         self.positions.pop()
-        
         if len(self.positions) > 4 and head in self.positions[1:]:
             self.reset()
 
